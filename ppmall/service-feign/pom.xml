@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>service-feign-user</artifactId>
-	<name>service-feign</name>
+	<name>service-feign-user</name>
 
 	<dependencies>
 		<dependency>

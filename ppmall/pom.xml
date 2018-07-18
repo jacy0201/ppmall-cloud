@@ -21,7 +21,7 @@
         <module>eureka-server</module>
         <module>service-hi</module>
         <module>service-ribbon</module>
-        <module>service-feign</module>
+        <module>service-feign-user</module>
         <module>ppmall-common</module>
         <module>service-zuul</module>
         <module>ppmall-web-user</module>
