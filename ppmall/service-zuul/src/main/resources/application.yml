@@ -19,6 +19,7 @@ spring:
   application:
     name: service-zuul
 zuul:
+  sensitive-headers: "*" #"*" 
   routes:
     user:
       path: /user/*
