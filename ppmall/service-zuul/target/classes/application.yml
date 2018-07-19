@@ -5,10 +5,21 @@ eureka:
 server:
   port: 8763
 spring:
+  redis:
+    host:  127.0.0.1
+    port: 6379
+    password: zxcvbnm
+    database: 0
+    pool:
+      max-active: 8
+      min-idle: 1
+      max-idle: 1
+      max-wait: -1
+
   application:
     name: service-zuul
 zuul:
   routes:
     user:
       path: /user/*
-      serviceId: service-feign-user
+      serviceId: ppmall-web-user #service-feign-user(做负载均衡时指向feign)
