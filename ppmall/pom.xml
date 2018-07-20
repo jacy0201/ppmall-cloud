@@ -24,6 +24,7 @@
         <module>ppmall-common</module>
         <module>service-zuul</module>
         <module>ppmall-web-user</module>
+        <module>ppmall-web-category</module>
     </modules>
 
     <properties>

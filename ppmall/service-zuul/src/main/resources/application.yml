@@ -22,5 +22,8 @@ zuul:
   sensitive-headers: "*" #"*" 
   routes:
     user:
-      path: /user/*
+      path: /user/**
       serviceId: ppmall-web-user #service-feign-user(做负载均衡时指向feign)
+    category: 
+      path: /category/**
+      serviceId: ppmall-web-category

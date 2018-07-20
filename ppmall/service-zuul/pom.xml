@@ -25,6 +25,12 @@
 			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
 		
+		<dependency>
+			<groupId>com.ycstudio</groupId>
+			<artifactId>ppmall-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 		<!-- spring-session 分布式session共享 -->
         <dependency>
 			<groupId>org.springframework.session</groupId>
@@ -34,9 +40,9 @@
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-redis</artifactId>
-			<version>1.4.7.RELEASE</version>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
+
 		
 	</dependencies>
 </project>

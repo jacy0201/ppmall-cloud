@@ -14,8 +14,8 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 @EnableRedisHttpSession
 @ComponentScan
 @MapperScan("com.ppmall.dao")
-public class UserWebApplication {
+public class CategoryWebApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(UserWebApplication.class, args);
+		SpringApplication.run(CategoryWebApplication.class, args);
 	}
 }
