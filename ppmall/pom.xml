@@ -25,6 +25,9 @@
         <module>service-zuul</module>
         <module>ppmall-web-user</module>
         <module>ppmall-web-category</module>
+        <module>ppmall-web-product</module>
+        <module>ppmall-web-order</module>
+        <module>ppmall-web-shipping</module>
     </modules>
 
     <properties>
