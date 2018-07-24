@@ -1,0 +1,57 @@
+server:
+  port: 8713
+
+spring:
+  datasource:
+    name: ppmall
+    url: jdbc:mysql://localhost:3306/ppmall?characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: zxcvbnm
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+  
+  redis:
+    host:  127.0.0.1
+    port: 6379
+    password: zxcvbnm
+    database: 0
+    pool:
+      max-active: 8
+      min-idle: 1
+      max-idle: 1
+      max-wait: -1
+      
+  application:
+    name: ppmall-web-cart
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+  #type-aliases-package: com.winter.model
+
+#pagehelper分页插件
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+
