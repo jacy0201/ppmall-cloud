@@ -28,6 +28,10 @@
         <module>ppmall-web-product</module>
         <module>ppmall-web-order</module>
         <module>ppmall-web-shipping</module>
+        <module>ppmall-web-cart</module>
+        <module>ppmall-web-backend</module>
+        <module>service-alipay</module>
+        <module>ppmall-alipay</module>
     </modules>
 
     <properties>
